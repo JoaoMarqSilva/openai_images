@@ -1,0 +1,6 @@
+openai_images_form_styles:
+  css:
+    theme:
+      assets/css/form_styles.css: {}
+  dependencies:
+    - core/admin

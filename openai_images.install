@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the openai_images module.
+ */
+
+// Implements hook_install().
+function openai_images_install()
+{
+  // Set default values for configuration on module installation.
+  $config = \Drupal::configFactory()->getEditable('openai_images.settings');
+  $config->set('api_key', '')->save();
+}
+
+// Implements hook_uninstall().
+function openai_images_uninstall()
+{
+  // Remove the configuration on module uninstallation.
+  \Drupal::configFactory()->getEditable('openai_images.settings')->delete();
+}

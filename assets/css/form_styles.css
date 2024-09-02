@@ -1,0 +1,109 @@
+.openai-images-generator .generator_container, .openai-images-variations .generator_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.openai-images-generator .generator_container .left_group, .openai-images-variations .generator_container .left_group{
+    width: calc(70% - 30px);
+}
+
+.openai-images-generator .generator_container .left_group .options_group, .openai-images-variations .generator_container .left_group .options_group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.openai-images-generator .generator_container .left_group .options_group .js-form-item, .openai-images-variations .generator_container .left_group .options_group .js-form-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.openai-images-generator .generator_container .left_group .options_group .button, .openai-images-variations .generator_container .left_group .options_group .button{
+    max-height: 50px;
+} 
+
+.openai-images-generator .generator_container .right_group, .openai-images-variations .generator_container .right_group {
+    width: 30%;
+}
+
+#image-preview-wrapper {
+    height: 100%;
+}
+
+.openai-images-variations .generator_container .left_group .image_group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.openai-images-variations .generator_container .left_group .image_group > div {
+    width: calc(50% - 20px);
+}
+.openai-images-variations .generator_container .left_group .image_group #image-variation-preview-wrapper {
+    min-height: 320px;
+    height: auto;
+    margin-top: 62px;
+}
+
+.openai-images-variations .generator_container .left_group .image_group [id^="ajax-wrapper"], 
+.openai-images-variations .generator_container .left_group .image_group #image-variation-preview-wrapper  img{
+    width: 100%;
+}
+
+.openai-images-variations .generator_container .left_group .image_group [id^="ajax-wrapper"] .image-widget {
+    flex-direction: column-reverse; 
+    width: 100%;
+}
+
+.openai-images-variations .generator_container .left_group .image_group [id^="ajax-wrapper"] .image-widget .form-managed-file__image-preview,
+.openai-images-variations .generator_container .left_group .image_group [id^="ajax-wrapper"] .image-widget .form-managed-file__image-preview .image-preview__img-wrapper,
+.openai-images-variations .generator_container .left_group .image_group [id^="ajax-wrapper"] .image-widget .form-managed-file__image-preview .image-preview__img-wrapper img {
+    width: 100%; 
+}
+
+.openai-images-variations .generator_container .left_group .image_group [id^="ajax-wrapper"] .image-widget .file-size {
+    margin-right: 20px;
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone, .openai-images-variations .generator_container .right_group .image_preview_zone {
+    background-image: url(../img/openAI_images.svg);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: top center;
+    height: 100%;
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone:after {
+	content: attr(data-text);
+    display: block;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone.warning_img,
+.openai-images-generator .generator_container .right_group .image_preview_zone.error_img {
+    background-image: none;
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone.warning_img:before {
+    content: url(../img/openAI_images_warning.svg);
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone.warning_img:after {
+    color: #D26600;
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone.error_img:before {
+    content: url(../img/openAI_images_error.svg);
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone.error_img:after {
+    color: #6C0700;
+}
+
+.openai-images-generator .generator_container .right_group .image_preview_zone img, .openai-images-variations .generator_container .left_group .image_preview_zone img{
+   width: 100%; 
+}

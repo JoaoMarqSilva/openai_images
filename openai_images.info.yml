@@ -1,0 +1,8 @@
+name: openAI Images
+description: 'Provides AI generated images for media from open AI API.'
+package: Media
+type: module
+core_version_requirement: ^9.2 || ^10 || ^11
+configure: openai_images.settings
+dependencies:
+  - drupal:media

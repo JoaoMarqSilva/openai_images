@@ -1,0 +1,23 @@
+openai_images.settings:
+  path: '/admin/config/media/openai_images_settings'
+  defaults:
+    _title: 'openAI images Settings'
+    _form: \Drupal\openai_images\Form\openaiImagesSettingsForm
+  requirements:
+    _permission: 'administer openai images'
+
+openai_images.generator:
+  path: '/admin/content/openai_images'
+  defaults:
+    _title: 'openAI images Generator'
+    _form: \Drupal\openai_images\Form\openaiImagesGenerator
+  requirements:
+    _permission: 'access content'
+
+openai_images.variations:
+  path: '/admin/content/openai_images_variations'
+  defaults:
+    _title: 'openAI images Variations'
+    _form: \Drupal\openai_images\Form\openaiImagesVariations
+  requirements:
+    _permission: 'access content'

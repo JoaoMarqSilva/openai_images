@@ -1,0 +1,27 @@
+openai_images.settings:
+  title: 'openAI images settings'
+  description: 'Configure openAI images settings.'
+  parent: system.admin_config_media
+  route_name: openai_images.settings
+  weight: 10
+
+openai_images.main:
+  title: 'openAI images'
+  description: 'The openAI images mains menu.'
+  route_name: openai_images.generator
+  parent: system.admin_content
+  weight: 10
+
+openai_images.generator:
+  title: 'Image Generator'
+  description: 'Create images with openAI.'
+  route_name: openai_images.generator
+  parent: openai_images.main
+  weight: 0
+
+openai_images.variation:
+  title: 'Image Variation'
+  description: 'Create image variations with openAI.'
+  route_name: openai_images.variations
+  parent: openai_images.main
+  weight: 1

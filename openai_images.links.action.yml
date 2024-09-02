@@ -1,0 +1,15 @@
+openai_images.add:
+  route_name: openai_images.generator
+  title: 'openAI Images'
+  weight: 10
+  appears_on:
+    - view.media_library.page
+    - entity.media.collection
+
+openai_images.add_variations:
+  route_name: openai_images.variations
+  title: 'openAI Images Variations'
+  weight: 10
+  appears_on:
+    - view.media_library.page
+    - entity.media.collection
